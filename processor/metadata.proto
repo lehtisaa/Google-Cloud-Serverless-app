@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package document;
+
+message DocumentMetadata {
+  string filename = 1;
+  string upload_date = 2; // ISO 8601 string
+  repeated string tags = 3;
+  int32 word_count = 4;
+  string file_extension = 5;
+}
